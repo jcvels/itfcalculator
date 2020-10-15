@@ -5,7 +5,7 @@
     <title></title>
     <link href="./style.css" media="screen" rel="stylesheet" type="text/css"/>
     <link href="./uniform.css" media="screen" rel="stylesheet" type="text/css"/>
-     <script type="text/javascript" src="./itf_calc.js"></script>
+    <script type="text/javascript" src="./itf_calc.js"></script>
 </head>
 <body>
  
