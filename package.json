@@ -4,7 +4,8 @@
   "description": "ITF 14 Generator",
   "main": "index.js",
   "scripts": {
-    "app-run": "nodemon ./index.js"
+    "start": "npm ./index.js",
+    "dev": "nodemon ./index.js"
   },
   "repository": {
     "type": "git",
