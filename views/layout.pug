@@ -3,8 +3,18 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Gen-14
-        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css")
-    body.uk-container-small.uk-align-center
+        title GEN-14
+        link(rel="stylesheet", href="/css/bootstrap.min.css")
+        link(rel="stylesheet", href="/css/appstyles.css")
+    body.container.mt-5
+        div.d-flex.mb-0
+            div.ml-0.align-bottom
+                p.display-4.mb-0 GEN-14
+            div.ml-auto.align-bottom.mb-0
+                a(href="/").mr-2.text-muted.app-hover #home
+                a(href="https://github.com/jcvels/itfcalculator" target="_blank").ml-2.text-muted.app-hover #github
+        hr
         block contenido
-        p.uk-position-bottom-center.uk-text-meta una aplicación de UVCoding
+        footer.mt-5.text-center.text-muted.inline-text
+            p app version 2.0.0 | GEN-14 es una aplicación de 
+                a(href="http://uvcoding.com.ar").text-muted.mt-5 UVCoding

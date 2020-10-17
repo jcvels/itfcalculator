@@ -5,8 +5,8 @@ const path = require('path');
 /* creo una app de express */
 const app = express();
 
-/* static files 
-app.set(express.static('public')); */
+/* static files */
+app.use(express.static('public')); 
 
 /* view engine */
 app.set('view engine','pug');
@@ -20,7 +20,7 @@ app.use('/', routes());
 /* defino el puerto de escucha */
 var port;
 if(process.env.PORT) { port = process.env.PORT; }
-else { port = 3000; }
+else { port = 80; }
 
 /* informo por consola el puerto de escucha */
 console.warn("APP listen port: #" +  port );

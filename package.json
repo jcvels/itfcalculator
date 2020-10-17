@@ -25,6 +25,7 @@
   "homepage": "https://github.com/jcvels/itfcalculator#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "normalize.css": "^8.0.1",
     "pug": "^3.0.0"
   },
   "devDependencies": {

@@ -1,0 +1,2 @@
+.app-hover { transition-delay: 0.1s; }
+.app-hover:hover { border-color: black; }
