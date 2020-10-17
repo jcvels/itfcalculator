@@ -1,0 +1,32 @@
+{
+  "name": "itfcalculator",
+  "version": "2.0.0",
+  "description": "ITF 14 Generator",
+  "main": "index.js",
+  "scripts": {
+    "app-run": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcvels/itfcalculator.git"
+  },
+  "keywords": [
+    "itf",
+    "itf14",
+    "generator",
+    "barcode"
+  ],
+  "author": "Jorge Claudio Pauvels",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcvels/itfcalculator/issues"
+  },
+  "homepage": "https://github.com/jcvels/itfcalculator#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  }
+}
