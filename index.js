@@ -18,4 +18,12 @@ app.set('views', path.join(__dirname, './views'))
 app.use('/', routes());
 
 /* defino el puerto de escucha */
-app.listen(80);
+var port;
+if(process.env.PORT) { port = process.env.PORT; }
+else { port = 3000; }
+
+/* informo por consola el puerto de escucha */
+console.warn("APP listen port: #" +  port );
+
+/* inicio el listering */
+app.listen(port);
