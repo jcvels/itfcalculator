@@ -1,5 +1,12 @@
 extends layout
+
+block add2menu
+    a(href="https://github.com/jcvels/itfcalculator/issues" target="_blanck").text-muted.ml-2 #addissue
+
 block contenido
-    .uk-card.uk-card-default.uk-card-body.uk-alert-danger
-        p.uk-card-title.uk-text-danger 404
-        p Lo lamentamos, pero no fue posible encontrar lo que buscabas :(
+    div(style="max-width: 800px").mx-auto
+        div.alert.alert-danger.mt-5
+            p.display-4 404
+            hr
+            p.lead Lo lamentamos, no fue posible encontrar lo que buscabas 
+                a(href="/").text-left #gohome

@@ -1,0 +1,7 @@
+extends layout
+
+block contenido
+    p.lead Ingresa el EAN13 del producto para calcular sus ITF14
+    form(action="/calc14", method="post")
+        input(type="number", name="barcode14Value", required, value="7798192366150").form-control.col-sm-4
+        button(type="submit").btn.btn-sm.btn-primary.mt-1 Calcular

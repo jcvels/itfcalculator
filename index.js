@@ -11,6 +11,9 @@ app.use(express.static('public'));
 /* view engine */
 app.set('view engine','pug');
 
+/* middlewares */
+app.use(express.urlencoded({ extended: true }))
+
 /* views folder */
 app.set('views', path.join(__dirname, './views'))
 
@@ -23,7 +26,7 @@ if(process.env.PORT) { port = process.env.PORT; }
 else { port = 80; }
 
 /* informo por consola el puerto de escucha */
-console.warn("APP listen port: #" +  port );
+console.log("--> listen to port #" +  port );
 
 /* inicio el listering */
 app.listen(port);
