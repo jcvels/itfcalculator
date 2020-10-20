@@ -22,7 +22,7 @@ exports.calc14OutputPage = (req, res) =>
 
 exports.gen14Download = (req, res) =>
 {
-
+    res.send( barcoder.svgMakerITF14( req.params.barcode ) );
 };
 
 exports.error404Page = (req, res) =>

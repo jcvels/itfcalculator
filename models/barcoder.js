@@ -1,9 +1,9 @@
 const barcode = require("barcodejs")
  
-exports.svgMakerITF14 = (barcode) =>
+exports.svgMakerITF14 = (code) =>
 {
-    response = barcode.renderBarcodeToSVG(barcode.code128( barcode ), { width: "100%", height: "20mm" });
-    return responce;
+    let response = barcode.renderBarcodeToSVG(barcode.encodeCode39( code ), { width: "100%", height: "20mm" });
+    return response;
 }
 
 exports.calculateITF14 = (barcode) =>
