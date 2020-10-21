@@ -8,8 +8,7 @@ module.exports = function()
 {
     /* system routes */
     router.get('/', mainController.mainPage);
-    //router.get('/*', mainController.error404Page);
-
+    
     /* routes for calc14 module */
     router.get('/calc14', mainController.calc14InputPage);
     router.post('/calc14', mainController.calc14OutputPage);
@@ -22,6 +21,9 @@ module.exports = function()
     /* routes for gen13 module */
     router.get('/gen13', mainController.gen13Input);    
     router.post('/gen13', mainController.gen13Output);
+
+    /* not found reply for any other route */
+    router.use(mainController.error404Page);
 
     return router;
 }

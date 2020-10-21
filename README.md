@@ -47,3 +47,5 @@
 
 - Release**V1** PHP + JS (2018) -- https://github.com/jcvels/itfcalculator/releases/tag/v1.0 --
 - Release**V2** Node.js (2020) -- https://github.com/jcvels/itfcalculator/releases/tag/v2.0 --
+
+> hope you enjoy using this app as much as i enjoyed to deploy! *jcvels*
