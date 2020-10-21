@@ -4,18 +4,21 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title GEN14
+        link(rel="Shortcut Icon", href="http://uvcoding.com.ar/assets/logo_uvcoding_isotype_200x200.svg")
         link(rel="stylesheet", href="/css/bootstrap.min.css")
         link(rel="stylesheet", href="/css/appstyles.css")
-        script(data-ad-client="ca-pub-8491207548761241" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
-        script(src="/js/bootstrap.min.js")
     body.container.mt-5
-        div.d-flex
-            div.ml-0
-                p.display-4.mb-0.text-info GEN14
-            div.ml-auto
-                a(href="/").mr-2.text-muted.app-hover #gohome
-                a(href="https://github.com/jcvels/itfcalculator" target="_blank").ml-2.text-muted.app-hover #github
-                block add2menu
+        div.row
+            div.col-sm-4
+                a(href="/").text-decoration-none
+                    p.display-4.mb-0.text-info GEN14
+            div.col-sm-8.text-sm-right
+                div.mt-sm-4
+                    a(href="/").text-muted.app-hover #home
+                    a(href="https://github.com/jcvels/itfcalculator/blob/master/README.md" target="_blank").ml-2.text-warning.app-hover #help
+                    a(href="https://github.com/jcvels/itfcalculator/blob/master/LICENSE" target="_blank").ml-2.text-warning.app-hover #license
+                    a(href="https://github.com/jcvels/itfcalculator" target="_blank").ml-2.text-warning.app-hover #github
+                    block add2menu
         hr
         if notification
             div(role="alert").alert.alert-danger.d-flex #{ notification } 
@@ -24,5 +27,5 @@ html(lang="en")
         else
             block contenido
         footer.mt-5.text-center.text-muted.inline-text
-            p app version 2.0.0 | GEN-14 es una aplicación de 
+            small V2.0 | GEN-14 | 2020 &copy;  
                 a(href="http://uvcoding.com.ar").text-muted.mt-5 UVCoding

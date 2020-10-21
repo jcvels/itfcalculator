@@ -1,11 +1,11 @@
 extends layout
 block contenido
-    p.lead GEN-14 Permite el calculo de los ITF14 a partir de un código EAN13 y la generación del archívo de imagen con el códigos de barras de EAN13 e ITF14
+    p.lead GEN14 realiza el calculo ITF14 a partir de un código EAN13. Adicionalmente, genera un archívo de códigos de barras para EAN13 o ITF14.
     div.card-deck.mt-5
         div.card
             div.card-body
                 h5.card-title Calcular ITF14
-                p.card-text Calcula un todas las variantes de código ITF14 para cada una de las diferentes versiones de embalaje, a partir de un EAN13.
+                p.card-text Calcula variantes de código ITF14 para diferentes versiones de embalaje a partir de un EAN13.
             div.card-footer
                 a(href="/calc14").btn.btn-sm.btn-primary.float-right Abrir...
         div.card
@@ -13,12 +13,10 @@ block contenido
                 h5.card-title Generar ITF14
                 p.card-text Genera un archivo de imagen con el código ITF14 ingresado.
             div.card-footer
-                span.small.text-warning no disponible
-                a(href="#").btn.btn-sm.btn-primary.float-right Abrir...
+                a(href="/gen14").btn.btn-sm.btn-primary.float-right Abrir...
         div.card
             div.card-body
                 h5.card-title Generar EAN13
                 p.card-text Genera un archivo de imagen con el código EAN13 ingresado.
             div.card-footer
-                span.small.text-warning no disponible
-                a(href="#").btn.btn-sm.btn-primary.float-right Abrir...
+                a(href="/gen13").btn.btn-sm.btn-primary.float-right Abrir...

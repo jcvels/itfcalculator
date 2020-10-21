@@ -1,0 +1,8 @@
+extends layout
+block contenido
+    p.lead Generamos el código! 
+        span.text-muted Click derecho + Guardar imágen como
+    .card.mt-5
+        .card-body
+            div.text-center
+                img(src=`https://barcode.tec-it.com/barcode.ashx?data=${code}&code=EAN13&multiplebarcodes=false&translate-esc=false&unit=Fit&dpi=96&imagetype=Gif&rotation=0&color=%23000000&bgcolor=%23ffffff&codepage=&qunit=Mm&quiet=0`)

@@ -2,14 +2,15 @@ extends layout
 block contenido
     p.lead Estos son los valores de ITF14 para cada version de embalaje. 
         span.text-muted Deberas tomar un ITF14 por cada version de embalaje multiple.
-    div
-        each itf in itf14s
-            div
-                div.card.mt-1
-                    div.card-body.row
-                        .col-sm-4
-                            p.card-title.text-aling-center.my-0 #{ itf.code }
-                        .col-sm-4
-                            small.text-muted.my-0 Formato de embalaje ##{ itf.version }
-                        .col-sm-4
-                            a(href="/gen14Download/" + itf.code ).btn.btn-secondary.btn-sm.float-right.my-0 Descargar
+    div.mt-5
+        if values
+            each value in values
+                div
+                    div.card.mt-1
+                        div.card-body.row
+                            .col-sm-4
+                                p.card-title.text-aling-center.my-0 #{ value.code }
+                            .col-sm-4
+                                small.text-muted.my-0 Formato de embalaje ##{ value.version }
+                            .col-sm-4
+                                a(href="/gen14/" + value.code ).btn.btn-secondary.btn-sm.float-sm-right.my-0 Descargar archivo de imágen

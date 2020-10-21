@@ -1,0 +1,11 @@
+extends layout
+block contenido
+    p.lead Genera archivo de imagen basado en un EAN13
+    div.mt-5
+    form(action="/gen13", method="post")
+        .row.mt-5
+            .form-group.col-sm-4
+                label(for="barcode14Value") Ingresa el EAN13
+                input(type="number", name="barcode13Value", required).form-control
+        .from-group
+            button(type="submit").btn.btn-sm.btn-primary.mt-2 Generar

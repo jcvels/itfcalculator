@@ -3,5 +3,12 @@ extends layout
 block contenido
     p.lead Ingresa el EAN13 del producto para calcular sus ITF14
     form(action="/calc14", method="post")
-        input(type="number", name="barcode14Value", required, value="7798192366150").form-control.col-sm-4
-        button(type="submit").btn.btn-sm.btn-primary.mt-1 Calcular
+        .row.mt-5
+            .form-group.col-sm-4
+                label(for="barcode14Value") ¿Cuál es el EAN13 que usaremos de base?
+                input(type="number", name="barcode14Value", required).form-control
+            .from-group.col-sm-4
+                label(for="barcode14VQtty") ¿Cuantos códigos ITF14 necesitas calcular?
+                input(type="number", name="barcode14Qtty", required, value="1", min="1" max="9").form-control
+        .from-group
+            button(type="submit").btn.btn-sm.btn-primary.mt-2 Calcular

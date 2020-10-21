@@ -1,5 +1,5 @@
 const express = require('express');
-const routes = require('./src/routes.manager');
+const routes = require('./src/routes');
 const path = require('path');
 
 /* creo una app de express */
